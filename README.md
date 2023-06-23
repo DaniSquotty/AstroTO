@@ -4,6 +4,8 @@ The repository contains codes we used to extract and analyse ISS images.
 
 ## Python programs
 
-* main.py: main program, used no RaspberryPi to make photos on the ISS
-* stich_img.py: post-elaboration porgram, used to stich significant photos for every year of interest
-* white.py: post-elaboration program, it recognizes white pixels on a photo, to evaluate the dimension of the glacier
+* 000_main.py: main program, used no RaspberryPi to make photos on the ISS
+* 010_CropImages.py: program that crop images
+* 020_ImageMatching.py: program used to match points in different pictures
+* 030_StitchImages.py: This code is correct and able to stitching correctly two images considering keypoints
+* white.py: program that convert image in greyscale and calculate the amount of white color in the image. Used to calculate glacier's area
